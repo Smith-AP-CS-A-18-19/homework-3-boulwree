@@ -1,5 +1,5 @@
 /*
- * First and Last Names
+ * Reece Boulware
  */
 
 public class Homework3 {
@@ -17,12 +17,15 @@ public class Homework3 {
 	 * class (e.g. Math.random())
 	 */
 	public void grade() {
+	Homework3.grade(this);
 
 	}
 
 	/* Calculate and return the sum of value1, value2, and value3
 	 */
 	public int sum() {
+		int s = value1 + value2 + value3;
+		return s;
 
 	}
 
@@ -30,6 +33,8 @@ public class Homework3 {
 	 * Hint: the average of numbers can be fractional
 	 */
 	public double average() {
+		double a = (value1 + value2 + value3) / 3.0;
+		return a;
 
 	}
 
@@ -37,6 +42,10 @@ public class Homework3 {
 	 * value 1, value2, and value3
 	 */
 	 public int productSumDifference() {
+		 int product = value1 * value2 * value3;
+		 int sum = value1 + value2 + value3;
+		 int d = product - sum;
+		 return d;
 
 	 }
 
@@ -44,6 +53,11 @@ public class Homework3 {
 	  * value3
 	  */
 	  public int sumSquares() {
+			double square1 = Math.pow(value1, 2);
+			double square2 = Math.pow(value2, 2);
+			double square3 = Math.pow(value3, 2);
+			int sum = (int)square1 + (int)square2 + (int)square3;
+			return sum;
 
 	  }
 
